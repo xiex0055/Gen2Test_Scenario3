@@ -4,9 +4,9 @@ REM  Average Link Speeds
 
 :: Write loaded links file from assignment to new file
 :: current iteration speeds will be removed and rewritten with averaged speeds below
-
-if exist %_iter_%_HWY.net   copy   %_iter_%_HWY.net    %_iter_%_Assign_Output.net /y
-if exist %_iter_%_HWY.net   copy   %_iter_%_HWY.net    %_iter_%_HWY.tem1 /y
+:: 07/03/2019 fxie  Modified lines 8, 9, 21  to address the potential issue of using iter_HWY.NET incorrectly
+if exist temp1_%_iter_%_HWY.net   copy   temp1_%_iter_%_HWY.net    %_iter_%_Assign_Output.net /y
+if exist temp1_%_iter_%_HWY.net   copy   temp1_%_iter_%_HWY.net    %_iter_%_HWY.tem1 /y
 
 
 if exist voya*.*  del voya*.*
