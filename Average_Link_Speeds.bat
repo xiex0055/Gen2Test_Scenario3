@@ -18,7 +18,7 @@ if exist voya*.prn  copy voya*.prn %_iter_%_Average_Link_Speeds.rpt /y
 :: Now copy over the original Loaded file with revised file containing new/avg speeds
 :: Note: the original file from assignment is maintained as %_iter_%_Assigned_%HWY.net
 
-if exist  %_iter_%_Averaged_HWY.net  copy %_iter_%_Averaged_HWY.net %_iter_%_HWY.net /y
+if exist  %_iter_%_Averaged_HWY.net  copy %_iter_%_Averaged_HWY.net temp2_%_iter_%_HWY.net /y
 
 
 goto end
